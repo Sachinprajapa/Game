@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.sky{
+   height: 100vh;
+   width: 100%;
+    background-image: url(./pexels-pixabay-46160.jpg);
+    position: absolute;
+    background-size: cover;
+   background-repeat: no-repeat;
+  
+} 
+
+.stric{
+    background-image: url(./596l_1lnc_210309_generated.jpg);
+    height: 60vh;
+    width: 800vh;
+    margin-left: -433px;
+    margin-top: 504px;
+ 
+   animation: carmove  linear .9s infinite;
+}
+.car{
+    background-image: url(./pexels-nordic-overdrive-202768-627678-removebg-preview.png);
+    height: 450px;
+    width: 550px;
+    background-repeat: no-repeat;
+    margin-top: -566px;
+    margin-left: 116px;
+    animation: shake  linear .6s infinite;
+}
+.wheel1 img{
+    border-radius: 50%;
+    margin-top: 178px;
+    margin-left: 86px;
+    height: 137px;
+   animation: wheel1 linear .6s infinite;
+
+}
+.wheel2 img{
+    border-radius: 50%;
+    margin-top: -217px;
+    margin-bottom: 25px;
+    margin-left: 404px;
+    height: 137px;
+    animation: wheel2 linear .6s infinite;
+
+}
+
+@keyframes wheel1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes wheel2{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes carmove{
+    100%{
+        transform: translateX(-500vh);
+    }
+}
+@keyframes shake{
+    0%{
+        transform: translatey(-5px);
+    }
+    50%{
+        transform: translatey(5px);
+    }
+    100%{
+        transform: translatey(-5px);
+    }
+}
